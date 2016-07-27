@@ -1,0 +1,51 @@
+<!doctype>
+<html>
+<head>
+<title>Text editor bar</title>
+<meta http-equiv="refresh" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Src\css\w3.css" />
+<script type="text/javascript" src="../src/js/jQuery_3_min.js"></script>
+<script type="text/javascript" src="../lib/textEditorBar.js"></script>
+<script type="text/javascript" src="../src/js/w3codeColor.js"></script>
+<script type="text/javascript" src="../src/js/handler.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>* {box-sizing:border-box;}</style>
+</head>
+<body class="w3-text-white" style="background-color:#282828;">
+
+<nav class="w3-sidenav w3-red w3-animate-left w3-tangerine w3-xxxlarge" style="display:none;position:absolute;top:0px;left:0px;" id="mySidenav">
+	<a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-closenav w3-lxxarge">Close &times;</a>
+	<a class="w3-padding-2 w3-hover-blue" href="\index.html">Home</a>
+	<a class="w3-padding-2 w3-hover-blue" href="#">Demo</a>
+	<a class="w3-padding-2 w3-hover-blue" href="#">Docs</a>
+	<a class="w3-padding-2 w3-hover-blue" href="#">GitHub</a>
+	<a class="w3-padding-2 w3-hover-blue" href="#">Issues</a>
+</nav>
+
+<div class=" w3-padding-large" style="display:block;width:90%;max-width:1000px;min-width:300px;margin:20px auto;">
+	<span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+	<h2 style="margin-top:30px;"> Demo</h2>
+	<div class="w3-container">
+		<div class="w3-container w3-center w3-text-black teb_forDemoBarContainer"></div>
+		<div class="w3-container w3-center">
+		<textarea class="teb_teb_forDemoBarContainertxtarea" style="width:100%;min-width:300px;max-width:600px;resize:none;min-height:200px;height:250px;max-height:500px;padding:10px;"></textarea>
+		</div>
+		<div class="w3-container ">
+		<span class="teb_result" style="display:block;margin:2px auto;width:100%;min-width:300px;max-width:600px;min-height:200px;height:250px;max-height:500px;padding:10px;"></span>
+	</div>	
+</div>
+     
+<script>
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
+</script>
+</body>
+</html>
